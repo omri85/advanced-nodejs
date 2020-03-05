@@ -1,0 +1,10 @@
+doctype html  
+html(lang='en')  
+ head
+   title= "StoryTeller"
+ body
+   h1= "Story: " + name
+   h3= createdAt.toISOString().split('T')[0]
+   div.container
+    each segment in segments
+        p= segment.content
